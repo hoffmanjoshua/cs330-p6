@@ -3,11 +3,46 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CS 330 - Project 6</title>
+		<title>Joshua Hoffman</title>
 		<link rel="stylesheet" href="styles.css" />
 		<script src="main.js"></script>
 	</head>
 	<body>
-    <h1>Josh Hoffman</h1>    
-  </body>
+		<header>
+			<h1>Josh Hoffman</h1>
+			<nav id="main-nav">
+				<ul>
+					<li><a href="" class="current">Home</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="home-intro width-limit">
+				<img  src="images/profile-pic.jpg" alt="Headshot of Josh">
+				<div class="intro-text">
+					<span class="headline">Student at Northwestern University</span>
+					<span class="subheadline">B.A., Computer Science</span>
+					<a href="about.html" class="button button-large" role="button" aria-label="Go to Bio">Read More</a>
+				</div>
+			</section>
+			<br>
+			<section class="width-limit">
+				<h2>Recent Work</h2>
+				<div class="project-box">
+					<div class="project-desc">
+						<h3>Trick or Treat 🍬</h3>
+						<div>
+							For Halloween in 2020, we have to get creative. The Trick or Treat app allows users to send virtual "candy" to friends via text, and keep track of their own candy bag.
+						</div>
+						<a href="https://github.com/hoffmanjoshua/Trick-or-Treat" class="button" role="button" aria-label="View Trick or Treat on Github">View on Github &RightArrow;</a>
+					</div>
+					<div class="project-image">
+						<img src="images/trick-or-treat.gif" alt="Trick or Treat App Confetti">
+					</div>
+				</div>
+			</section>
+		</main>
+  	</body>
 </html>
