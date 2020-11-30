@@ -12,16 +12,34 @@
             <h1>Josh Hoffman</h1>
             		<nav id="main-nav">
             			<ul>
-            				<li><a href="/">Home</a></li>
+            				<li><a href="./index.html">Home</a></li>
             				<li><a href="" class="current">About</a></li>
-            				<li><a href="/contact.html">Contact</a></li>
+            				<li><a href="./contact.html">Contact</a></li>
             			</ul>
                     </nav>
         </header>
         <main class="width-limit">
             <h2 class="page-title">About Josh</h2>
             <div class="rounded-box">
-            </div>
-        </main>
+				<p>I am second-year student at <b>Northwestern University</b> studying Computer Science and Economics! My hometown is Wilmette, IL.</p>
+				<p>My development experience ranges from iOS to web applications, but I always love to explore new tools and technologies. Most of my knowledge is self-taught, so I don't fear any new challenge.</p>
+				<p>Outside of the classroom, you can always find me with a camera. Currently, I photograph Northwestern sports for <i>The Daily Northwestern</i>, but I also love landscape photography.</p>
+				<button class="button" id="resume-button" onclick="toggleAboutModal();">Open Resume</button>
+				<div class="modal" id="about-modal">
+					<div class="modal-content">
+						<button id="close-modal" class="close-modal-btn" onclick="toggleAboutModal();">Close</button>
+						<iframe src="https://drive.google.com/file/d/11Ei9ggJnvVWCP4NS_sJFMZ0gRr38bI_4/preview" width="100%" height="500"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="photo-row">
+				<img src="images/josh-1.JPG" alt="Josh with a camera" />
+				<img src="images/josh-3.JPG" alt="Josh with his puppy, archie" />
+				<img src="images/josh-2.JPG" alt="Josh performing on stage" />
+			</div>
+		</main>
+		<footer>
+			&copy; Joshua Hoffman 2020
+		</footer>
   	</body>
 </html>

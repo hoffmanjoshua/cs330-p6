@@ -13,8 +13,8 @@
 			<nav id="main-nav">
 				<ul>
 					<li><a href="" class="current">Home</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/contact.html">Contact</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -36,7 +36,23 @@
 						<div>
 							For Halloween in 2020, we have to get creative. The Trick or Treat app allows users to send virtual "candy" to friends via text, and keep track of their own candy bag.
 						</div>
-						<a href="https://github.com/hoffmanjoshua/Trick-or-Treat" class="button" role="button" aria-label="View Trick or Treat on Github">View on Github &RightArrow;</a>
+						<div class="row">
+							<a href="https://github.com/hoffmanjoshua/Trick-or-Treat" class="button" role="button" aria-label="View Trick or Treat on Github">View on Github &RightArrow;</a>
+							<button class="button" onclick="toggleProjectModal();">Learn More &#9432;</button>
+						</div>
+						<div class="modal" id="project-modal">
+							<div class="modal-content">
+								<button id="close-modal" class="close-modal-btn" onclick="toggleProjectModal();">Close</button>
+								<div>
+									<h3>Trick or Treat</h3>
+									<p>COVID-19 caused many traditions to be cancelled, including trick or treating in 2020. With everyone already on their devices for work and school, why not make trick or treating virtual this year!?</p>
+									<p>In the app, you can pick a "costume" and send candy to friends via iMessages. Other friends with the app, once they click on the link, receive their candy (with some confetti), and can see how full their bag is!</p>
+									<p>This doesn't replace in-person trick or treating, but this year, it's just something fun while we all stay inside!</p>
+									<hr>
+									<p><i>This project was built using Swift and SwiftUI. Confetti package (ConfettiView) from ziligy.</i></p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="project-image">
 						<img src="images/trick-or-treat.gif" alt="Trick or Treat App Confetti">
@@ -56,5 +72,8 @@
 				</div>
 			</section>
 		</main>
+		<footer>
+			&copy; Joshua Hoffman 2020
+		</footer>
   	</body>
 </html>
