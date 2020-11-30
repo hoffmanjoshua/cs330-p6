@@ -23,6 +23,23 @@ h1 {
     margin-right: 10px;
 }
 
+.row figure img {
+    max-width: 200px;
+}
+
+.row figure figcaption {
+    max-width: 200px;
+    text-align: center;
+    display: block;
+    color: #555;
+
+}
+
+.row.centered {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 nav {
     max-width: 400px;
     background-color: #ddd;
@@ -211,11 +228,13 @@ main {
 }
 
 .modal .modal-content {
+    overflow: auto;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     min-height: 300px;
+    max-height: 90vh;
     width: 90%;
     max-width: 900px;
     background-color: #fff;
