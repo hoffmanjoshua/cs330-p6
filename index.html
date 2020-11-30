@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="styles.css" />
 		<script src="main.js"></script>
 	</head>
-	<body>
+	<body class="fade-in">
 		<header>
 			<h1>Josh Hoffman</h1>
 			<nav id="main-nav">
@@ -20,7 +20,7 @@
 		</header>
 		<main>
 			<section class="home-intro width-limit">
-				<img  src="images/profile-pic.jpg" alt="Headshot of Josh">
+				<img class="scale-in" src="images/profile-pic.jpg" alt="Headshot of Josh">
 				<div class="intro-text">
 					<span class="headline">Student at Northwestern University</span>
 					<span class="subheadline">B.A., Computer Science</span>
@@ -40,36 +40,36 @@
 							<a href="https://github.com/hoffmanjoshua/Trick-or-Treat" class="button" role="button" aria-label="View Trick or Treat on Github">View on Github &RightArrow;</a>
 							<button class="button" onclick="toggleProjectModal();">Learn More &#9432;</button>
 						</div>
-						<div class="modal" id="project-modal">
-							<div class="modal-content">
-								<button id="close-modal" class="close-modal-btn" onclick="toggleProjectModal();">Close</button>
-								<div>
-									<h3>Trick or Treat 🎃🍫</h3>
-									<p>COVID-19 caused many traditions to be cancelled, including trick or treating in 2020. With everyone already on their devices for work and school, why not make trick or treating virtual this year!?</p>
-									<p>In the app, you can pick a "costume" and send candy to friends via iMessages. Other friends with the app, once they click on the link, receive their candy (with some confetti), and can see how full their bag is!</p>
-									<p>This doesn't replace in-person trick or treating, but this year, it's just something fun while we all stay inside! 😷</p>
-									<div class="row centered">
-										<figure>
-											<img src="./images/home.png" alt="Trick or Treat home screen" />
-											<figcaption>Main screen</figcaption>
-										</figure>
-										<figure>
-											<img src="./images/settings.png" alt="Trick or treat settings screen" />
-											<figcaption>Costume and name selection</figcaption>
-										</figure>
-										<figure>
-											<img src="./images/confetti.png" alt="Trick or Treat app with candy confetti">
-											<figcaption>Confetti after receiving candy</figcaption>
-										</figure>
-									</div>
-									<hr>
-									<p><i>This project was built using Swift and SwiftUI. Confetti package (ConfettiView) from ziligy.</i></p>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="project-image">
 						<img src="images/trick-or-treat.gif" alt="Trick or Treat App Confetti">
+					</div>
+				</div>
+				<div class="modal" id="project-modal">
+					<div class="modal-content">
+						<button id="close-modal" class="close-modal-btn" onclick="toggleProjectModal();">Close</button>
+						<div>
+							<h3>Trick or Treat 🎃🍫</h3>
+							<p>COVID-19 caused many traditions to be cancelled, including trick or treating in 2020. With everyone already on their devices for work and school, why not make trick or treating virtual this year!?</p>
+							<p>In the app, you can pick a "costume" and send candy to friends via iMessages. Other friends with the app, once they click on the link, receive their candy (with some confetti), and can see how full their bag is!</p>
+							<p>This doesn't replace in-person trick or treating, but this year, it's just something fun while we all stay inside! 😷</p>
+							<div class="row centered">
+								<figure>
+									<img src="./images/home.png" alt="Trick or Treat home screen" />
+									<figcaption>Main screen</figcaption>
+								</figure>
+								<figure>
+									<img src="./images/settings.png" alt="Trick or treat settings screen" />
+									<figcaption>Costume and name selection</figcaption>
+								</figure>
+								<figure>
+									<img src="./images/confetti.png" alt="Trick or Treat app with candy confetti">
+									<figcaption>Confetti after receiving candy</figcaption>
+								</figure>
+							</div>
+							<hr>
+							<p><i>This project was built using Swift and SwiftUI. Confetti package (ConfettiView) from ziligy.</i></p>
+						</div>
 					</div>
 				</div>
 				<div class="project-box">

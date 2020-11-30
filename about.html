@@ -20,10 +20,10 @@
         </header>
         <main class="width-limit">
             <h2 class="page-title">About Josh</h2>
-            <div class="rounded-box">
+            <div>
 				<p>I am second-year student at <b>Northwestern University</b> studying Computer Science and Economics! My hometown is Wilmette, IL.</p>
-				<p>My development experience ranges from iOS to web applications, but I always love to explore new tools and technologies. Most of my knowledge is self-taught, so I don't fear any new challenge.</p>
-				<p>Outside of the classroom, you can always find me with a camera. Currently, I photograph Northwestern sports for <i>The Daily Northwestern</i>, but I also love landscape photography.</p>
+				<p>My development experience ranges from iOS to web applications, but I always love to explore new tools and technologies. Most of my knowledge is self-taught, so I don't fear any new challenge. Currently, I am building iOS apps to fulfill my own productivity needs.</p>
+				<p>Outside of the classroom, you can always find me with a camera. Currently, I photograph Northwestern sports for <i>The Daily Northwestern</i>, but I also love landscape photography. For my entire life, I have also performed in many musicals, some favorites being <i>Shrek</i> and <i>The Addams Family</i></p>
 				<button class="button" id="resume-button" onclick="toggleAboutModal();">Open Resume</button>
 				<div class="modal" id="about-modal">
 					<div class="modal-content">
@@ -32,10 +32,40 @@
 					</div>
 				</div>
 			</div>
+			<br>
+			<div class="rounded-box">
+				<h3>Josh's "Favorite Things"</h3>
+				<div class="row space-between">
+					<div>
+						<p class="list-header" id="tools-list">🛠 Tools/Languages</p>
+						<ul aria-labelledby="tools-list">
+							<li>React</li>
+							<li>Swift & SwiftUI</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div>
+						<p class="list-header" id="apps-list">🗓 Productivity Apps</p>
+						<ul aria-labelledby="apps-list">
+							<li>Notion</li>
+							<li>Things 3</li>
+							<li>Slack</li>
+						</ul>
+					</div>
+					<div>
+						<p class="list-header" id="disney-list">📺 Disney Characters</p>
+						<ul aria-labelledby="disney-list">
+							<li>Aladdin (<i>Aladdin</i>)</li>
+							<li>Sven (<i>Frozen</i>)</li>
+							<li>Stitch (<i>Lilo and Stitch</i>)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="photo-row">
-				<img src="images/josh-1.JPG" alt="Josh with a camera" />
-				<img src="images/josh-3.JPG" alt="Josh with his puppy, archie" />
-				<img src="images/josh-2.JPG" alt="Josh performing on stage" />
+				<img src="images/josh-1.JPG" alt="Josh with a camera" class="hover-grow" />
+				<img src="images/josh-3.JPG" alt="Josh with his puppy, archie" class="hover-grow" />
+				<img src="images/josh-2.JPG" alt="Josh performing on stage" class="hover-grow" />
 			</div>
 		</main>
 		<footer>

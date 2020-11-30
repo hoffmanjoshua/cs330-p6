@@ -40,6 +40,11 @@ h1 {
     justify-content: space-around;
 }
 
+.row.space-between {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 nav {
     max-width: 400px;
     background-color: #ddd;
@@ -113,6 +118,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
 }
 
 .contact-links a img {
@@ -175,6 +185,7 @@ main {
     margin-top: 30px;
     font-size: 1em;
     border: none;
+    transition: background-color 0.15s;
 }
 
 .button-large {
@@ -194,6 +205,12 @@ main {
     border-radius: 20px;
     box-shadow: 2px 2px 10px #0005;
     display: flex;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.project-box:hover {
+    box-shadow: 2px 2px 12px #0007;
+    transform: scale(1.05);
 }
 
 .project-box h3 {
@@ -280,4 +297,50 @@ footer {
     width: 200px;
     border-radius: 20px;
     margin: 20px 5px;
+}
+
+.list-header {
+    font-weight: 500;
+}
+
+/* ANIMATIONS */
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.scale-in {
+    animation: scaleIn 1s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hover-grow:hover {
+    animation: hoverGrow 0.15s forwards;
+}
+
+@keyframes hoverGrow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
